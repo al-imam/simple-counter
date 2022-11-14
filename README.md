@@ -1,4 +1,4 @@
-**Live website link <ins>[website_name](#)</ins>!**
+**Live website link <ins>[simple-counter](https://al-imam-simple-counter.netlify.app/)</ins>!**
 
 <hr>
 
