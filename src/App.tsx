@@ -4,18 +4,12 @@ function App() {
   return (
     <div
       style={{
-        maxWidth: 880,
-        padding: "16px 8px 0",
-        display: "grid",
-        gridTemplate: "auto / 1fr 1fr",
+        maxWidth: "clamp(320px, 90%, 720px)",
+        margin: "0 auto",
+        padding: "1rem 0 2rem",
       }}
     >
-      <h1
-        style={{
-          gridColumn: "1 / -1",
-          margin: "0 0 0.5rem 1rem",
-        }}
-      >
+      <h1>
         <a
           style={{
             color: "2D2E2D",
@@ -26,10 +20,19 @@ function App() {
           simple-counter
         </a>
       </h1>
-      <Counter add={1} sub={1} />
-      <Counter add={8} sub={8} />
-      <Counter add={10} sub={10} />
-      <Counter add={2} sub={2} />
+      <div
+        style={{
+          display: "grid",
+          gap: "16px",
+          gridTemplate: "auto / repeat( auto-fit, minmax(300px, 1fr) )",
+          alignContent: "center",
+        }}
+      >
+        <Counter add={1} sub={1} />
+        <Counter add={8} sub={8} />
+        <Counter add={10} sub={10} />
+        <Counter add={2} sub={2} />
+      </div>
     </div>
   );
 }
