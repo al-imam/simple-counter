@@ -1,29 +1,27 @@
 .div {
   text-align: center;
-  padding: 32px 0;
-  background-color: rgba(110,103,219, 0.7);
-  border-radius: 5px;
+  background-color: /*rgba(110,103,219, 0.7)*/ var(--teal-5);
+  border-radius: 0.25rem;
+  display: grid;
+  gap: 1rem;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  justify-items: center;
+  padding: 1rem;
 }
 
 .span {
   display: block;
   text-align: center;
   font-size: 3rem;
-  font-family: serif;
+  font-family: var(--ff-sans-serif);
+  grid-column: 1 / -1;
+  color: var(--gray-1);
 }
 
 .button {
   height: 64px;
   width: 64px;
   border-radius: 5px;
-  background-color: white;
-}
-
-.button + .button {
-  margin-left: 24px;
-}
-
-.p {
-  color: rgba(5,21,142,0.8);
-  font-size: 0.5rem;
+  border: none;
+  background-color: var(--gray-1);
 }

@@ -15,9 +15,6 @@ function Counter({ add, sub }: { add: number; sub: number }) {
   return (
     <div className={classes.div}>
       <span className={classes.span}>{count}</span>
-      <p className={classes.p}>
-        Add by - "{add}", and Subtract by - "{sub}".
-      </p>
       <button className={classes.button} onClick={addHandler}>
         +
       </button>
